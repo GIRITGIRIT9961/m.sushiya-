@@ -94,5 +94,5 @@ urlcopy.onclick = function ()
 
 home.onclick = function ()
 {
-    location.href = 'back.html';
+    location.href = 'index.html';
 }

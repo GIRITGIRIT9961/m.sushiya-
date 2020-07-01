@@ -1,3 +1,5 @@
+
+
 function logKey(e) { 
     if(saveX == 0 )
     {
@@ -87,4 +89,10 @@ urlcopy.onclick = function ()
 
     alert('링크 복사 완료');
 
+}
+
+
+home.onclick = function ()
+{
+    location.href = 'back.html';
 }

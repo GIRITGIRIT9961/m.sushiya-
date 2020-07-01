@@ -1,0 +1,239 @@
+
+<style>
+    .fade
+    {
+        display: none; 
+    }
+    .menuImage
+    {
+        height: 500px; 
+        width: 130px; 
+        margin-right: 50px;
+    }
+    .Last
+    {
+        margin-right: unset; 
+    }
+    .menuImage:hover {
+        transition: transform 0.5s linear;
+        transform: translate(0px, 100px);
+    }
+    .selectButton
+    {
+        background-image: url('img/shrimpCircle.png'); 
+    }
+    .noDrag
+    {
+       -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+    }
+
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport">
+<script>
+    
+    var initial = window.innerWidth / 375;
+    document.getElementsByName("viewport")[0].content = "width=375px, initial-scale="+initial;
+
+</script>
+
+<html class = 'noDrag' >
+
+
+    <body style="margin: 0;">
+        
+        <div style="background-image: url('img/shrimp.png'); background-size: 375px 812px; width: 375px; height: 812px; margin:auto; overflow: hidden;">
+            
+            <div style="height: 15%;">
+                <div style='height: 55%;'></div>
+                <div style="background-image: url('img/shrimpCircle.png'); background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                    <img id='menu' src='img/menu.png' style="margin: 13px 0 0 10px;" >
+                </div>
+            </div>
+            
+            <div id='main' style='height: 600px; background-color: white;'>
+                <div style="height: 50px;"></div>
+                <img id='infoImage' src='img/shrimp/image1.png'>
+                <img id='search' src='img/shrimpSearch.png' style="margin: 0 0 0 88%;">
+            </div>
+          
+            <div id='info' class='fade' style='height: 600px; background-color: white;'>
+                <div style="height: 50px;"></div>
+                <img id='infoDetail' src='img/shrimp/info1.png'>
+
+                <img id='back' src='img/shrimpBack.png' style="margin: 0 0 0 88%;">
+            </div>
+            <div id='menuScreen' class="fade">
+                <div  style="display: inline-flex; position: relative; top:-723px">
+                    <div id='buttonSet' style="height: 812px; width: 60px; background-color: rgba(220, 220, 220, 1); ">
+                        <div style="height: 15%;">
+                            <div style='height: 55%;'></div>
+                            <div style="background-image: url('img/shrimpCircle.png'); background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                                <img src='img/menu.png' style="margin: 13px 0 0 10px;" >
+                            </div>
+                        </div>
+
+                        <div id = 'anotherFish' class='selectButton' style="background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                            <img  src='img/anotherFish.png' style="margin: 13px 0 0 10px;" >
+                        </div>
+
+                        <div id = 'another' style="background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                            <img src='img/another.png' style="margin: 13px 0 0 12px;" >
+                        </div>
+
+                        <div id = 'urlcopy' style="background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                            <img  src='img/urlcopy.png' style="margin: 13px 0 0 10px;" >
+                        </div>
+
+                        <div id = 'menuBack' style="background-size: 49px 49px; background-repeat: no-repeat; width: 49px; height: 49px; margin: 0 0 0 5px;">
+                            <img  src='img/back.png' style="margin: 13px 0 0 10px;" >
+                        </div>
+                    </div>
+                    <div style="height: 812px; width: 315px; background-color: rgba(0, 0, 0, 0.5); overflow: hidden;">
+                        <div id='anotherFishDetail'>
+                            <div id='menuList' style='width: 800px; height: 100%; ' >
+                                <img class = 'noDrag' src='img/menu1.png' onclick='location.href="fish.html"' style="margin: 180px 0 0 10px;"  >
+                                <img class = 'noDrag' src='img/menu2.png' onclick='location.href="shrimp.html"' style="margin: 0px 0 0 10px;">
+                                <img class = 'noDrag' src='img/menu3.png' onclick='location.href="shellfishe.html"' style="margin: 0px 0 0 10px;">
+                                <img class = 'noDrag' src='img/menu4.png' onclick='location.href="etc.html"' style="margin: 0px 0 0 10px;">
+                            </div>
+                        </div>
+
+                        <div id='anotherDetail'>
+                            <div id='anotherMenuList' style='width: 800px; height: 100%; ' >
+                                <img class = 'noDrag menu' src='img/shrimp/menu1.png' style="margin: 260px 0 0 10px;"  >
+                                <img class = 'noDrag menu' src='img/shrimp/menu2.png' style="margin: 0 0 0 10px;"  >
+                                <img class = 'noDrag menu' src='img/shrimp/menu3.png' style="margin: 0 0 0 10px;"  >
+                                <img class = 'noDrag menu' src='img/shrimp/menu4.png' style="margin: 0 0 0 10px;"  >
+                            </div>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script charset='utf-8' src="js/main.js">
+    
+    
+    </script>
+    <script>
+            
+        var fishSaveLeftMax = -260;
+        var mousePress = false;
+        var saveX = 0;
+        var fishSaveLeft = 0;
+        var anotherSaveLeft = 0;
+        var isAnotherFish = false;
+
+        for(var loop = 0 ; loop < document.getElementsByClassName('menu').length ; loop++)
+        {
+            document.getElementsByClassName('menu')[loop].onclick = function ()
+            {
+                var number = this.src.split('menu')[1].split('.png')[0];
+                infoImage.src = 'img/shrimp/image'+number+'.png';
+                infoDetail.src =  'img/shrimp/info'+number+'.png';
+                menuScreen.className='fade';
+                document.getElementById('main').removeAttribute('class');
+                document.getElementById('info').setAttribute('class','fade');
+
+            };
+        }
+
+        document.getElementById('menuList').onmousedown = function ()
+        {
+            mousePress = true;
+            isAnotherFish = true;
+        }
+        document.getElementById('anotherMenuList').onmousedown = function ()
+        {
+            mousePress = true;
+            isAnotherFish = false;
+        }
+
+        document.getElementById('menuList').ontouchstart = function ()
+        {
+            mousePress = true;
+            isAnotherFish = true;
+        }
+        
+        document.getElementById('anotherMenuList').ontouchstart = function ()
+        {
+            mousePress = true;
+            isAnotherFish = false;
+        }
+
+
+
+        document.ontouchend = function ()
+        {
+            saveX= 0;
+            mousePress = false;
+        }
+        document.onmouseup = function ()
+        {
+            saveX= 0;
+            mousePress = false;
+        }
+
+        var style = 'width: 800px; height: 100%; z-index: 30;';
+       
+        document.addEventListener('mousemove', logKey);
+        document.addEventListener("touchmove", logKey);
+        
+                
+        document.getElementById('search').onclick = function ()
+        {
+            document.getElementById('info').removeAttribute('class');
+            document.getElementById('main').setAttribute('class','fade');
+        };
+
+        function reset()
+        {
+            document.getElementById('another').removeAttribute('class');
+            document.getElementById('anotherFish').removeAttribute('class');
+            document.getElementById('urlcopy').removeAttribute('class');
+            document.getElementById('anotherFishDetail').setAttribute('class','fade'); 
+            document.getElementById('anotherDetail').setAttribute('class','fade'); 
+        };
+        document.getElementById('another').onclick = function ()
+        {
+            reset();
+            this.setAttribute('class','selectButton');
+            document.getElementById('anotherDetail').removeAttribute('class');
+        };
+
+        document.getElementById('anotherFish').onclick = function ()
+        {
+            reset();
+            this.setAttribute('class','selectButton');
+            document.getElementById('anotherFishDetail').removeAttribute('class');
+        };
+
+
+        document.getElementById('menuBack').onclick = function ()
+        {
+            document.getElementById('menuScreen').setAttribute('class','fade');
+        };
+
+        document.getElementById('menu').onclick = function ()
+        {
+            document.getElementById('menuScreen').removeAttribute('class');
+        };
+
+        document.getElementById('back').onclick = function ()
+        {
+            document.getElementById('main').removeAttribute('class');
+            document.getElementById('info').setAttribute('class','fade');
+        };
+        
+    </script>
+
+
+
+
+</html>
